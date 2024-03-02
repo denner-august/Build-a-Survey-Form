@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>build-a-suvery-form</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <header>
+        <h1 id="title">Challeger freeCodeCamp Survey Form</h1>
+        <p id="description">Thank you for your time using my platform</p>
+    </header>
+    <main>
+        <form id="survey-form">
+            <label for="name" id="name-label">Nome</label>
+            <input name="name"  type="text" required id="name" placeholder="Digite seu nome" />
+            <label for="email" id="email-label">E-mail</label>
+            <input name="email" type="email" required id="email" placeholder="Digite seu e-mail">
+            <label for="idade" id="number-label">idade</label>
+            <input name="idade" required type="number" id="number" placeholder="Digite sua idade" min="0" max="100">
+
+            <label for="dropdown">Qual sua Stack atual mais usada?</label>
+            <select name="dropdown" id="dropdown" title="Stack">
+                <option disabled value="default">Escolha uma opção</option>
+                <option value="React">React</option>
+                <option value="Vue">Vue</option>
+                <option value="Angular">Angular</option>
+                <option value="Node">Node</option>
+            </select>
+
+            <label for="recommed">Quanto você comendaria a Stack que você utiliza</label>
+            <section>
+                <div>
+                    <input type="radio" value="muito" name="indicação">
+                    <label for="muito"> muito</label>
+                </div>
+                    
+                <div>
+                    <input type="radio" value="médio" name="indicação">
+                    <label for="medio"> medio</label>
+                </div>
+                    
+                <div>
+                    <input type="radio" value="pouco" name="indicação">
+                    <label for="pouco"> pouco</label>
+                </div>
+            </section>
+
+            <label for="dropdown">Qual Stack você menor gosta?</label>
+              <select name="dropdown" id="dropdown" title="Stack">
+                <option disabled value="default">Escolha uma opção</option>
+                <option value="React">React</option>
+                <option value="Vue">Vue</option>
+                <option value="Angular">Angular</option>
+                <option value="Node">Node</option>
+            </select>
+
+            <section>
+                <label>Qual sua posição atual</label>
+
+                <div>
+                    <input type="checkbox" name="level" id="junior" value="junior"  >
+                    <label for="level">junior</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="level" id="pleno" value="pleno">
+                     <label for="pleno">pleno</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="level  " id="senior" value="senior">
+                    <label for="senior">senior</label>
+                </div>
+            </section>
+
+            <p>Como podemos melhorar?</p>
+           <textarea
+                name="textarea"
+                rows="5"
+                cols="30"
+                placeholder="Digite seu comentario">
+                
+            </textarea>
+
+            <button id="submit">Enviar</button>
+        </form>
+
+    </main>
+</body>
+</html>
